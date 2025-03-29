@@ -1,32 +1,43 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+int main(){
 
-int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
+//Criando variáveis
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+int torre = 1;
+int bispo = 1;
+int rainha;
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+//Movimentação da torre (5 casas paara direita)
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+printf("==================\nMOVIMENTO DA TORRE\n==================\n");
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+while (torre <= 5)
+{
+ printf("torre move-se uma casa para direita...\n", torre);
+ torre++;
+ 
+}
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+printf("===================\nMOVIMENTO DO BISPO\n===================\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+//Movimentação do bispo (5 cadas diagonal)
+
+do
+{
+    printf("bispo move-se uma casa cima/direita...\n");
+    bispo++;
+
+} while (bispo <= 5);
+
+//Movimentação da rainha (8 casas para esquerda)
+
+printf("===================\nMOVIMENTO DA RAINHA\n===================\n");
+
+for (rainha = 1; rainha <= 8; rainha++)
+{
+    printf("rainha move-se uma casa para esquerda...\n");
+}
 
     return 0;
 }
